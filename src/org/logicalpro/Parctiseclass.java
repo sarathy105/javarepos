@@ -30,6 +30,33 @@ public class Parctiseclass {
 		}else {
 			System.out.println("it is not a palindrome");
 		}*/
-}
+		
+	String str = "MBN^%^75tfMNB&6567hg";
+	int capcount=0;
+	int smallcount=0;
+	int number=0;
+	int specialchar=0;
 	
-}
+	for (int i=0;i<str.length();i++) {
+		char charAt = str.charAt(i);
+		
+		if(charAt>='a' &&  charAt<='z') {
+			smallcount++;
+		}else if(charAt>='A' &&  charAt<='B') {
+				capcount++;
+		} else if(charAt>='0' &&  charAt<='9') {
+					number++;
+		} else {
+			specialchar++;
+		}
+	}
+		System.out.println("capcount :"+capcount);
+		System.out.println("small count :"+smallcount);
+		System.out.println("number :"+number);
+		System.out.println("specialchar:"+specialchar);
+		
+			
+		}		
+		
+	}
+	
